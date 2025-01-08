@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: sandybrown;
+    text-shadow: 0 0 3px black;
+}
+
+img {
+    width: 200px;
+    border: 3px solid #84806C;
+    border-radius: 50%;
+}
+
+#hero {
+    background-image: url("images/spanish-moss-trees.jpg");
+    background-size: cover;
+    background-position: center 75%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 0;
+}
+
+#activity {
+    margin-top: 0;
+    height: 500px;
+    background-image: url("images/texture3.jpg");
+    background-position: center 5%;
+    background-size: cover;
+    display: block;
+    border: 6px solid gainsboro;
+    color: black;
+    text-shadow: 0 0 1px white;
+
+}
+ .container {
+     display: flex;
+     justify-content: space-around;
+     align-content: center;
+ }
+
+ #avatar {
+     width: 100px;
+ }
+
+ #big {
+     height: 150px;
+ }
+
+ .small {
+     height: 150px;
+ }
+
+ .card-p {
+     width: 150px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .activities:hover {
+     transform: scale(1.2);
+ }
+ #guide {
+     width: 500px;
+     display: flex;
+     justify-content: center;
+     margin: 25px auto;
+     background: #23470D;
+     border: 5px solid #84806C;
+     padding: 5px 10px;
+
+ }
