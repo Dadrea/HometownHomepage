@@ -9,13 +9,14 @@ img {
     width: 200px;
     border: 3px solid #84806C;
     border-radius: 50%;
+    max-width: 100%;
 }
 
 #hero {
     background-image: url("images/spanish-moss-trees.jpg");
     background-size: cover;
     background-position: center 75%;
-    height: 500px;
+    /*height: 500px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,10 +24,13 @@ img {
     margin-bottom: 0;
 
 }
+#hero, #activity {
+    height: 60vh; /* 40% of the viewport height */
+}
 
 #activity {
     margin: 0;
-    height: 500px;
+    /*height: 500px;*/
     background-image: url("images/savannah-marsh.jpg");
     background-position: center 75%;
     background-size: cover;
@@ -41,6 +45,7 @@ img {
      display: flex;
      justify-content: space-around;
      align-content: center;
+     flex-wrap: wrap;
  }
 
  #avatar {
@@ -65,6 +70,12 @@ img {
 
  .activities:hover {
      transform: scale(1.2);
+
+ }
+
+ .activities {
+     transition: transform 0.3s ease-in-out;
+     max-width: 100%;
  }
  #guide {
      width: 500px;
@@ -98,5 +109,29 @@ img {
     background-image: url("images/texture2.jpg");
     background-position: center 75%;
     background-size: cover;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+    #hero {
+        height: fit-content;
+    }
+
+    #activity {
+        height: fit-content;
+    }
+    #contactMe {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #guide {
+        width: fit-content; /* Full width on small screens */
+        margin: 10px 0; /* Adjust margin */
+    }
+
 
 }
