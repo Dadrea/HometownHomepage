@@ -88,12 +88,19 @@ img {
  }
 
  #contactMe {
+     display: flex;
      padding: 0;
      will-change: filter;
      transition: filter 300ms;
+     justify-content: space-evenly;
+     align-content: center;
+     gap: 25px;
  }
 .logo.linkedIn:hover {
     filter: drop-shadow(0 0 2em #0072b1)
+}
+.logo.gitHub:hover {
+    filter: drop-shadow(0 0 2em white)
 }
 .logo.linkedIn {
     width: 40px;
@@ -102,7 +109,13 @@ img {
     border-radius: 0;
     margin-top: 25px;
 }
-
+.logo.gitHub {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+}
 #foot {
     margin: 0;
     padding: 25px 0 50px 0;
