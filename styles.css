@@ -2,7 +2,6 @@ body {
     margin: 0;
     text-align: center;
     color: sandybrown;
-    //text-shadow: 0 0 3px white;
     text-shadow: 1px 2px black;
 }
 
@@ -77,3 +76,18 @@ img {
      padding: 5px 10px;
 
  }
+
+ #contactMe {
+     padding: 0;
+     will-change: filter;
+     transition: filter 300ms;
+ }
+.logo.linkedIn:hover {
+    filter: drop-shadow(0 0 2em #0072b1)
+}
+.logo.linkedIn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+}
